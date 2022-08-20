@@ -10,6 +10,6 @@ app.use('/graphql', graphqlHTTP({
     graphiql: true
 }));
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log('server started');
 })
