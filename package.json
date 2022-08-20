@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/Nyorikenoichi/etacar-test-backend#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "express": "^4.18.1",
     "express-graphql": "^0.12.0",
-    "graphql": "^16.6.0"
+    "graphql": "^15.8.0"
   }
 }
