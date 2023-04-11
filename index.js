@@ -6,7 +6,9 @@ const cors = require("cors");
 const app = express();
 const PORT = 6969;
 
-app.use(cors());
+const corsOptions = { origin: ["https://nyori-crypto-tracker.netlify.app/"] };
+
+app.use(cors(corsOptions));
 
 app.use("/graphql", graphqlHTTP({
     schema,
